@@ -24,7 +24,7 @@ async def responder(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text("No entendí eso, ¿puedes repetirlo?")
 
 # TOKEN del bot
-TOKEN = "7779513706:AAFcIZ7VFRUFt89IzjZ4OjEEtUMQpg1op3E"
+TOKEN = ""
 
 # Ejecutar el bot
 if __name__ == "__main__":
@@ -32,3 +32,4 @@ if __name__ == "__main__":
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, responder))
     print("🤖 Bot encendido. Presiona Ctrl+C para detener.")
     app.run_polling()
+
